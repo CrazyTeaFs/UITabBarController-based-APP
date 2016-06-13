@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411A24AA1D0EE53500AE4D52 /* NSDate+JHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 411A24A21D0EE53500AE4D52 /* NSDate+JHExtension.m */; };
+		411A24AB1D0EE53500AE4D52 /* UIBarButtonItem+JHExension.m in Sources */ = {isa = PBXBuildFile; fileRef = 411A24A41D0EE53500AE4D52 /* UIBarButtonItem+JHExension.m */; };
+		411A24AC1D0EE53500AE4D52 /* UIImage+JHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 411A24A61D0EE53500AE4D52 /* UIImage+JHExtension.m */; };
+		411A24AD1D0EE53500AE4D52 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 411A24A81D0EE53500AE4D52 /* UIView+Extension.m */; };
+		411A24B01D0EE5E500AE4D52 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411A24AF1D0EE5E500AE4D52 /* JHNavigationController.m */; };
 		4128D7D01D06F9E6003C9F94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4128D7CF1D06F9E6003C9F94 /* main.m */; };
 		4128D7D31D06F9E6003C9F94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4128D7D21D06F9E6003C9F94 /* AppDelegate.m */; };
 		4128D7DB1D06F9E6003C9F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4128D7DA1D06F9E6003C9F94 /* Assets.xcassets */; };
@@ -39,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411A24A11D0EE53500AE4D52 /* NSDate+JHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JHExtension.h"; sourceTree = "<group>"; };
+		411A24A21D0EE53500AE4D52 /* NSDate+JHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JHExtension.m"; sourceTree = "<group>"; };
+		411A24A31D0EE53500AE4D52 /* UIBarButtonItem+JHExension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JHExension.h"; sourceTree = "<group>"; };
+		411A24A41D0EE53500AE4D52 /* UIBarButtonItem+JHExension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JHExension.m"; sourceTree = "<group>"; };
+		411A24A51D0EE53500AE4D52 /* UIImage+JHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JHExtension.h"; sourceTree = "<group>"; };
+		411A24A61D0EE53500AE4D52 /* UIImage+JHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JHExtension.m"; sourceTree = "<group>"; };
+		411A24A71D0EE53500AE4D52 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		411A24A81D0EE53500AE4D52 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		411A24A91D0EE53500AE4D52 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		411A24AE1D0EE5E500AE4D52 /* JHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHNavigationController.h; path = RootTabBarController/JHNavigationController.h; sourceTree = "<group>"; };
+		411A24AF1D0EE5E500AE4D52 /* JHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHNavigationController.m; path = RootTabBarController/JHNavigationController.m; sourceTree = "<group>"; };
 		4128D7CB1D06F9E6003C9F94 /* SelfWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4128D7CF1D06F9E6003C9F94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4128D7D11D06F9E6003C9F94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +107,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		411A249F1D0EE53500AE4D52 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				411A24A01D0EE53500AE4D52 /* Category */,
+				411A24A91D0EE53500AE4D52 /* PrefixHeader.pch */,
+			);
+			name = Others;
+			path = Classes/Others;
+			sourceTree = "<group>";
+		};
+		411A24A01D0EE53500AE4D52 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				411A24A11D0EE53500AE4D52 /* NSDate+JHExtension.h */,
+				411A24A21D0EE53500AE4D52 /* NSDate+JHExtension.m */,
+				411A24A31D0EE53500AE4D52 /* UIBarButtonItem+JHExension.h */,
+				411A24A41D0EE53500AE4D52 /* UIBarButtonItem+JHExension.m */,
+				411A24A51D0EE53500AE4D52 /* UIImage+JHExtension.h */,
+				411A24A61D0EE53500AE4D52 /* UIImage+JHExtension.m */,
+				411A24A71D0EE53500AE4D52 /* UIView+Extension.h */,
+				411A24A81D0EE53500AE4D52 /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		4128D7C21D06F9E6003C9F94 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +155,7 @@
 		4128D7CD1D06F9E6003C9F94 /* SelfWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				411A249F1D0EE53500AE4D52 /* Others */,
 				41390E691D08098B002E5716 /* Qi */,
 				41390E681D080987002E5716 /* Ba */,
 				41390E671D080982002E5716 /* Wu */,
@@ -158,6 +200,8 @@
 		4128D8041D070761003C9F94 /* RootTabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				411A24AE1D0EE5E500AE4D52 /* JHNavigationController.h */,
+				411A24AF1D0EE5E500AE4D52 /* JHNavigationController.m */,
 				4128D8011D070757003C9F94 /* JHRootTabBarController.h */,
 				4128D8021D070757003C9F94 /* JHRootTabBarController.m */,
 				416561131D0917660007B1F1 /* JHTabBar.h */,
@@ -432,12 +476,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				41390E781D080A56002E5716 /* JHThirdViewController.m in Sources */,
+				411A24AB1D0EE53500AE4D52 /* UIBarButtonItem+JHExension.m in Sources */,
+				411A24AA1D0EE53500AE4D52 /* NSDate+JHExtension.m in Sources */,
+				411A24AC1D0EE53500AE4D52 /* UIImage+JHExtension.m in Sources */,
 				4128D7D31D06F9E6003C9F94 /* AppDelegate.m in Sources */,
 				41390E751D080A3F002E5716 /* JHSecondViewController.m in Sources */,
+				411A24AD1D0EE53500AE4D52 /* UIView+Extension.m in Sources */,
 				416561151D0917660007B1F1 /* JHTabBar.m in Sources */,
 				41390E7B1D080A78002E5716 /* JHFourthViewController.m in Sources */,
 				4128D7D01D06F9E6003C9F94 /* main.m in Sources */,
 				4128D8031D070757003C9F94 /* JHRootTabBarController.m in Sources */,
+				411A24B01D0EE5E500AE4D52 /* JHNavigationController.m in Sources */,
 				41390E621D0808E1002E5716 /* JHFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = SelfWeiBo/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = SelfWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.SelfWeiBo;
@@ -582,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = SelfWeiBo/Classes/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = SelfWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Home.SelfWeiBo;
