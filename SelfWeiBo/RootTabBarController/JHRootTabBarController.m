@@ -11,6 +11,8 @@
 #import "JHSecondViewController.h"
 #import "JHThirdViewController.h"
 #import "JHFourthViewController.h"
+#import "UIImage+JHExtension.h"
+#import "JHNavigationController.h"
 #import "JHTabBar.h"
 
 @interface JHRootTabBarController ()
@@ -23,10 +25,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self addChildViews];
+    [self setUpTabBarItemTitleColor];
     //为了加入自定义的button到底部工具栏中，我们需要使用自己的TabBar来替换系统默认的。
     //这里使用KVC是因为系统没有提供设置tabBar的方法，只能用这个方法来设置。
     JHTabBar *tabBar = [[JHTabBar alloc] init];
     [self setValue:tabBar forKey:@"tabBar"];
+}
+
+/**
+ *  使用Appearance设置UITabBarItem的风格，这样整个APP中的UITabBarItem都是这个风格
+ */
+- (void)setUpTabBarItemTitleColor
+{
+    NSDictionary *dic = @{
+                          NSForegroundColorAttributeName: [UIColor darkGrayColor]
+                          };
+    UITabBarItem *item = [UITabBarItem appearance];
+    [item setTitleTextAttributes:dic forState:UIControlStateSelected];
 }
 
 /**
@@ -44,12 +59,12 @@
     //设置tabbaritem的默认图片，用UIImage的imageNamed方法传入图片名创建图片
     childView.tabBarItem.image = [UIImage imageNamed:imageName];
     //设置TabBarItem点击后的图片
-    childView.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
+    childView.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName].jh_originalImage;
     //设置view的背景颜色，这样好看些
     childView.view.backgroundColor = [UIColor purpleColor];
     
-    //为了让子控制器有顶部导航栏，我们用UINavigationController来包装我们的childView
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:childView];
+    //为了让子控制器有顶部导航栏，我们用JHNavigationController来包装我们的childView
+    JHNavigationController *navi = [[JHNavigationController alloc] initWithRootViewController:childView];
     //把导航控制器添加到TabBarController的子控制器中
     [self addChildViewController:navi];
 }
